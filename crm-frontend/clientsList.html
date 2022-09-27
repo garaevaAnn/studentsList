@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клиенты Skillbus</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="./css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script defer src="./js/choices.min.js"></script>
+  <script defer src="./js/inputmask.min.js"></script>
+
+  <script async type="module" src="./js/repository.js"></script>
+  <script async type="module" src="./js/sortingData.js"></script>
+  <script  type="module" src="./js/filterData.js"></script>
+  <script type="module" src="./js/validation.js"></script>
+  <script type="module" src="./js/clients.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container flex">
+      <a href="" class="header__logo">
+        <img src="img/logo.svg" class="header__logo" alt="logo">
+      </a>
+      <div class="header__input">
+        <input id="filter" class="header__inquiry" type="text" placeholder="Введите запрос">
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div id="container" class="container ">
+      <h1 class="title">Клиенты</h1>
+
+      <div class="container__table">
+      <table id="listClients" class="listClients">
+        <th class="table-header">
+          <button id="btnSort_id" class="table-header__btn"> ID
+          </button>
+        </th>
+        <th class="table-header ">
+          <button id="btnSort_fio" class="table-header__btn"> Фамилия Имя Отчество
+          </button>
+          <span class="table-header__fio">
+            А-Я
+          </span>
+        </th>
+        <th class="table-header">
+          <button id="btnSort_cteateDate" class="table-header__btn"> Дата и время создания
+          </button>
+        </th>
+        <th class="table-header">
+          <button id="btnSort_updateDate" class="table-header__btn"> Последние изменения
+          </button>
+        </th>
+        <th class="table-header">Контакты
+        </th>
+        <th class="table-header">Действия
+        </th>
+      </table>
+      </div>
+
+<div class="btn-add">
+  <button id="add" class="add-client ">
+    <span class="add-client__svg"> Добавить клиента</span>
+  </button>
+</div>
+
+
+      <div class="overlay js-overlay-modal"></div>
+    </div>
+
+
+
+
+  </main>
+</body>
+
+</html>
